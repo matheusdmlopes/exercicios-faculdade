@@ -1,0 +1,11 @@
+# Ignorar arquivos de objeto
+*.o
+
+# Ignorar executáveis
+*.exe
+*.out
+*.a
+*.so
+
+# Ignorar diretórios de compilação
+/build/
