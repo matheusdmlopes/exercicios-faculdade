@@ -1,4 +1,5 @@
 # Ignorar arquivos de objeto
+*
 *.o
 
 # Ignorar executáveis
@@ -9,3 +10,8 @@
 
 # Ignorar diretórios de compilação
 /build/
+
+!*/
+!*.c
+!*.h
+!*.md
