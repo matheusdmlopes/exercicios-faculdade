@@ -41,11 +41,9 @@ void solucao1() {
         euro=real*cotacao;
         printf("Valor em real: %.2f", euro);
     }
-    return 0;
 }
 
-// local > estrangeira = divisao
-// estrangeira > local = multiplicacao
+
 
 void solucao2() {
     int opcao;
@@ -88,8 +86,10 @@ void solucao2() {
         euro=real/cotacao;
         printf("Valor em real: %.2f", euro);
     }
-    return 0;
 }
+
+// local > estrangeira = divisao
+// estrangeira > local = multiplicacao
 
 int main() {
     int escolha;
