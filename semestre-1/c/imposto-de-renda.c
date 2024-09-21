@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// A partir da entrada do salário de um funcionário, faça um programa em C que calcule e mostre no final o imposto de renda devido.
+
 void solucao1() {
     float salarioAtual, imposto, salarioFinal;
 
@@ -31,6 +33,7 @@ void solucao1() {
 }
 
 void solucao2() {
+    // Esta é a solução proposta pelo professor.
     float salarioAtual, imposto, salarioFinal;
 
     printf("Digite seu salario atual: ");
