@@ -20,11 +20,13 @@ int main() {
 
     valorFinal=valorParcial+frete;
 
-    printf("O valor parcial do projeto e: R$%.2f", valorParcial);
+    //system("clear");
 
-    printf("O valor do frete do projeto e: R$%.2f", frete);
+    printf("O valor parcial do projeto e: R$%.2f\n", valorParcial);
 
-    printf("O valor final do projeto e: R$%.2f", valorFinal);
+    printf("O valor do frete do projeto e: R$%.2f\n", frete);
+
+    printf("O valor final do projeto e: R$%.2f\n", valorFinal);
 
     return 0;
 }
