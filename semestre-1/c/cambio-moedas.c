@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void solucao1() {
+void solucao1()
+{
     int opcao;
     float real, dolar, euro, cotacao;
 
@@ -10,42 +11,45 @@ void solucao1() {
     printf("Valor da cotacao (quanto 1 unidade da moeda da esquerda equivale a da direita): ");
     scanf("%f", &cotacao);
 
-    if(opcao == 1) {
+    if (opcao == 1)
+    {
         printf("Digite o valor em dolar que deseja converter para real: ");
         scanf("%f", &dolar);
 
-        real=dolar*cotacao;
+        real = dolar * cotacao;
         printf("Valor em real: %.2f", real);
     }
 
-    if(opcao == 2) {
+    if (opcao == 2)
+    {
         printf("Digite o valor em Real que deseja converter para dolar: ");
         scanf("%f", &real);
 
-        dolar=real*cotacao;
+        dolar = real * cotacao;
         printf("Valor em dolar: %.2f", dolar);
     }
 
-    if(opcao == 3) {
+    if (opcao == 3)
+    {
         printf("Digite o valor em Euro que deseja converter para Real: ");
         scanf("%f", &euro);
 
-        real=euro*cotacao;
+        real = euro * cotacao;
         printf("Valor em real: %.2f", real);
     }
 
-    if(opcao == 4) {
+    if (opcao == 4)
+    {
         printf("Digite o valor em Real que deseja converter para Euro: ");
         scanf("%f", &real);
 
-        euro=real*cotacao;
+        euro = real * cotacao;
         printf("Valor em real: %.2f", euro);
     }
 }
 
-
-
-void solucao2() {
+void solucao2()
+{
     int opcao;
     float real, dolar, euro, cotacao;
 
@@ -55,55 +59,61 @@ void solucao2() {
     printf("Valor da cotacao direta(quantas moedas locais precisam pra comprar 1 moeda estrangeira): ");
     scanf("%f", &cotacao);
 
-    if(opcao == 1) {
+    if (opcao == 1)
+    {
         printf("Digite o valor em dolar que deseja converter para real: ");
         scanf("%f", &dolar);
 
-        real=dolar*cotacao;
+        real = dolar * cotacao;
         printf("Valor em real: %.2f", real);
     }
 
-    if(opcao == 2) {
+    if (opcao == 2)
+    {
         printf("Digite o valor em Real que deseja converter para dolar: ");
         scanf("%f", &real);
 
-        dolar=real/cotacao;
+        dolar = real / cotacao;
         printf("Valor em dolar: %.2f", dolar);
     }
 
-    if(opcao == 3) {
+    if (opcao == 3)
+    {
         printf("Digite o valor em Euro que deseja converter para Real: ");
         scanf("%f", &euro);
 
-        real=euro*cotacao;
+        real = euro * cotacao;
         printf("Valor em real: %.2f", real);
     }
 
-    if(opcao == 4) {
+    if (opcao == 4)
+    {
         printf("Digite o valor em Real que deseja converter para Euro: ");
         scanf("%f", &real);
 
-        euro=real/cotacao;
+        euro = real / cotacao;
         printf("Valor em real: %.2f", euro);
     }
 }
 
 // local > estrangeira = divisao
 // estrangeira > local = multiplicacao
+// o cambio é sempre quanto 1 unidade da estrangeira compra de local.
 
-int main() {
+int main()
+{
     int escolha;
 
     printf("Escolha solucao 1 ou 2: ");
     scanf("%d", &escolha);
 
-    if (escolha == 1) {
+    if (escolha == 1)
+    {
         solucao1();
     }
-    if (escolha == 2) {
-    solucao2();
+    if (escolha == 2)
+    {
+        solucao2();
     }
     return 0;
 }
-
-
