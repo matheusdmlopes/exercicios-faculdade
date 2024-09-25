@@ -10,7 +10,7 @@ void solucao1() {
 
     if(operacao != 1 && operacao != 2) {
         printf("Selecione uma operacao valida"); // if opcional somente para verificação se o numero escolhido está correto, nao sendo necessário na prova.
-        return 0;
+        return;
     }
 
     printf("Digite o valor: ");
@@ -42,7 +42,7 @@ void solucao1() {
 
     printf("O valor do imposto e: %.2f", imposto);
 
-    return 0;
+    return;
 }
 
 void solucao2() {
@@ -55,7 +55,7 @@ void solucao2() {
 
     if(operacao != 1 && operacao != 2) {
         printf("Selecione uma operacao valida");
-        return 0;
+        return;
     }
 
     printf("Digite o valor: ");
@@ -83,7 +83,7 @@ void solucao2() {
 
     printf("O valor do imposto e: %.2f", imposto);
 
-    return 0;
+    return;
 
 }
 
