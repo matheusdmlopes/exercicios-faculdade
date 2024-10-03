@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void solucao1() {
-    // soluçao de acordo com a proposta do professor
+    // soluçao de acordo com a proposta da questão
     int operacao;
     float imposto, valor;
 
@@ -9,10 +9,9 @@ void solucao1() {
     scanf("%d", &operacao);
 
     if(operacao != 1 && operacao != 2) {
-        printf("Selecione uma operacao valida"); // if opcional somente para verificação se o numero escolhido está correto, nao sendo necessário na prova.
+        printf("Selecione uma operacao valida"); // if opcional somente para verificação
         return;
     }
-
     printf("Digite o valor: ");
     scanf("%f", &valor);
 
