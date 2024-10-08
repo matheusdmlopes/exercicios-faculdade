@@ -5,7 +5,7 @@ void exercicio1() {
 
     printf("Numeros pares de 2 a 100:\n");
     for(i=2; i<=100; i++) {
-        if((i/2) * 2 == i){
+        if(i % 2 == 0){
             printf("%d\n", i);
         }
     }
@@ -16,7 +16,7 @@ void exercicio2() {
 
     printf("Numeros impares de 1 a 100:\n");
     for(i=1; i<=100; i++) {
-        if((i/2) * 2 != i) {
+        if(i % 2 != 0) {
             printf("%d\n", i);
         }
     }
