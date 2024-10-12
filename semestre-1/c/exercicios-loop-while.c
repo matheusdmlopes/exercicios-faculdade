@@ -5,15 +5,15 @@ void exMediaGeral()
 {
     int i;
     float acc, nota, mediaGeral;
-    i=1;
-    while(i<=3) {
+    i = 1;
+    while(i <= 3) {
         printf("Digite a nota do aluno: ");
         scanf("%f", &nota);
 
-        acc= acc+nota;
+        acc = acc + nota;
         i++;
     }
-    mediaGeral=acc/3;
+    mediaGeral = acc / 3;
     printf("Media geral da sala: %.2f", mediaGeral);
 }
 
@@ -23,12 +23,12 @@ void exSalarios()
     float acc, salario, media;
 
     // Inicialização das variáveis de contagem ou acumulo.
-    i=1;
-    acc=0;
-    quantidadeMenor2k=0;
-    quantidadeMaior5k=0;
+    i = 1;
+    acc = 0;
+    quantidadeMenor2k = 0;
+    quantidadeMaior5k = 0;
 
-    while(i<=3) {
+    while(i <= 3) {
         printf("Digite o salario: ");
         scanf("%f", &salario);
 
@@ -40,11 +40,11 @@ void exSalarios()
             quantidadeMaior5k++;
         }
 
-        acc=acc+salario;
+        acc = acc + salario;
         i++;
     }
 
-    media=acc/3;
+    media = acc / 3;
 
     printf("Salarios ate 2000 reais: %d\n", quantidadeMenor2k);
     printf("Salarios acima de 5000 reais: %d\n", quantidadeMaior5k);
@@ -55,19 +55,19 @@ void exMaiorEMenorNumero()
 {
     int i, numero, maiorNumero, menorNumero;
 
-    i=1;
-    maiorNumero=0;
-    menorNumero=0;
+    i = 1;
+    maiorNumero = 0;
+    menorNumero = 0;
 
     while(i <= 5) {
         printf("Digite o numero: ");
         scanf("%d", &numero);
 
         if(numero > maiorNumero) {
-            maiorNumero=numero;
+            maiorNumero = numero;
         }
         if(menorNumero == 0 || numero < menorNumero) {
-            menorNumero=numero;
+            menorNumero = numero;
         }
 
         i++;

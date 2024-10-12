@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float altura, largura, valorMetroQuadrado, frete, area, valorFinal, valorParcial;
 
     printf("Digite o valor da altura: ");
@@ -12,13 +13,13 @@ int main() {
     printf("Digite o valor do metro quadrado: ");
     scanf("%f", &valorMetroQuadrado);
 
-    area=altura*largura;
+    area = altura * largura;
 
-    valorParcial=area*valorMetroQuadrado;
+    valorParcial = area * valorMetroQuadrado;
 
-    frete=valorParcial*0.08;
+    frete = valorParcial * 0.08;
 
-    valorFinal=valorParcial+frete;
+    valorFinal = valorParcial + frete;
 
     //system("clear");
 

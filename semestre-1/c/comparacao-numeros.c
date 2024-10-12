@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float a, b;
 
     printf("Digite o valor a: ");
@@ -10,7 +11,7 @@ int main() {
     scanf("%f", &b);
 
     if(a == b) {
-    printf("A e B sao iguais");
+        printf("A e B sao iguais");
     } else {
         if(a < b) {
             printf("A e menor que B");

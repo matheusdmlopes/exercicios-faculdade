@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float nota1, nota2, media;
 
     printf("Nota da prova 1: ");
@@ -9,7 +10,7 @@ int main() {
     printf("Nota da prova 2: ");
     scanf("%f", &nota2);
 
-    media=(nota1+nota2)/2;
+    media = (nota1 + nota2) / 2;
 
     printf("Sua media e: %.2f", media);
 

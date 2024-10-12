@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void solucao1() {
+void solucao1()
+{
     // soluçao de acordo com a proposta da questão
     int operacao;
     float imposto, valor;
@@ -17,24 +18,24 @@ void solucao1() {
 
     if(operacao == 1) {
         if(valor <= 4000) {
-            imposto=valor*0.09;
+            imposto = valor * 0.09;
         } else {
             if(valor <= 8000) {
-                imposto=valor*0.14;
+                imposto = valor * 0.14;
             } else {
-                imposto=valor*0.18;
+                imposto = valor * 0.18;
             }
         }
     }
 
     if(operacao == 2) {
         if(valor <= 3000) {
-            imposto=valor*0.04;
+            imposto = valor * 0.04;
         } else {
             if(valor <= 6000) {
-                imposto=valor*0.06;
+                imposto = valor * 0.06;
             } else {
-                imposto=valor*0.08;
+                imposto = valor * 0.08;
             }
         }
     }
@@ -44,7 +45,8 @@ void solucao1() {
     return;
 }
 
-void solucao2() {
+void solucao2()
+{
     // solução alternativa com uso de else if
     int operacao;
     float imposto, valor;
@@ -62,21 +64,21 @@ void solucao2() {
 
     if(operacao == 1) {
         if(valor <= 4000) {
-            imposto=valor*0.09;
+            imposto = valor * 0.09;
         } else if(valor <= 8000) {
-            imposto=valor*0.14;
+            imposto = valor * 0.14;
         } else {
-            imposto=valor*0.18;
+            imposto = valor * 0.18;
         }
     }
 
     if(operacao == 2) {
         if(valor <= 3000) {
-            imposto=valor*0.04;
+            imposto = valor * 0.04;
         } else if(valor <= 6000) {
-            imposto=valor*0.06;
+            imposto = valor * 0.06;
         } else {
-            imposto=valor*0.08;
+            imposto = valor * 0.08;
         }
     }
 
@@ -86,7 +88,8 @@ void solucao2() {
 
 }
 
-int main() {
+int main()
+{
     int operacao;
 
     printf("Selecione solucao 1 ou 2: ");

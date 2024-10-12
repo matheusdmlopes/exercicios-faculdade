@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float salarioAtual, aumento, porcentagem, salarioFinal;
 
     printf("Digite o seu salario atual: ");
@@ -10,9 +11,9 @@ int main() {
     scanf("%f", &porcentagem);
 
 
-    aumento=salarioAtual*(porcentagem/100);
+    aumento = salarioAtual * (porcentagem / 100);
 
-    salarioFinal=salarioAtual+aumento;
+    salarioFinal = salarioAtual + aumento;
 
     printf("Seu salario final e: R$%.2f\n", salarioFinal);
     printf("Seu aumento foi de: R$%.2f", aumento);

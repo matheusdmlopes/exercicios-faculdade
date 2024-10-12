@@ -11,8 +11,7 @@ void solucao1()
     printf("Valor da cotacao (quanto 1 unidade da moeda da esquerda equivale a da direita): ");
     scanf("%f", &cotacao);
 
-    if (opcao == 1)
-    {
+    if (opcao == 1) {
         printf("Digite o valor em dolar que deseja converter para real: ");
         scanf("%f", &dolar);
 
@@ -20,8 +19,7 @@ void solucao1()
         printf("Valor em real: %.2f", real);
     }
 
-    if (opcao == 2)
-    {
+    if (opcao == 2) {
         printf("Digite o valor em Real que deseja converter para dolar: ");
         scanf("%f", &real);
 
@@ -29,8 +27,7 @@ void solucao1()
         printf("Valor em dolar: %.2f", dolar);
     }
 
-    if (opcao == 3)
-    {
+    if (opcao == 3) {
         printf("Digite o valor em Euro que deseja converter para Real: ");
         scanf("%f", &euro);
 
@@ -38,8 +35,7 @@ void solucao1()
         printf("Valor em real: %.2f", real);
     }
 
-    if (opcao == 4)
-    {
+    if (opcao == 4) {
         printf("Digite o valor em Real que deseja converter para Euro: ");
         scanf("%f", &real);
 
@@ -59,8 +55,7 @@ void solucao2()
     printf("Valor da cotacao direta(quantas moedas locais precisam pra comprar 1 moeda estrangeira): ");
     scanf("%f", &cotacao);
 
-    if (opcao == 1)
-    {
+    if (opcao == 1) {
         printf("Digite o valor em dolar que deseja converter para real: ");
         scanf("%f", &dolar);
 
@@ -68,8 +63,7 @@ void solucao2()
         printf("Valor em real: %.2f", real);
     }
 
-    if (opcao == 2)
-    {
+    if (opcao == 2) {
         printf("Digite o valor em Real que deseja converter para dolar: ");
         scanf("%f", &real);
 
@@ -77,8 +71,7 @@ void solucao2()
         printf("Valor em dolar: %.2f", dolar);
     }
 
-    if (opcao == 3)
-    {
+    if (opcao == 3) {
         printf("Digite o valor em Euro que deseja converter para Real: ");
         scanf("%f", &euro);
 
@@ -86,8 +79,7 @@ void solucao2()
         printf("Valor em real: %.2f", real);
     }
 
-    if (opcao == 4)
-    {
+    if (opcao == 4) {
         printf("Digite o valor em Real que deseja converter para Euro: ");
         scanf("%f", &real);
 
@@ -107,12 +99,10 @@ int main()
     printf("Escolha solucao 1 ou 2: ");
     scanf("%d", &escolha);
 
-    if (escolha == 1)
-    {
+    if (escolha == 1) {
         solucao1();
     }
-    if (escolha == 2)
-    {
+    if (escolha == 2) {
         solucao2();
     }
     return 0;
