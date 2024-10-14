@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-
 void exMediaGeral()
 {
     int i;
     float acc, nota, mediaGeral;
     i = 1;
-    while(i <= 3) {
+    acc = 0;
+    while (i <= 3)
+    {
         printf("Digite a nota do aluno: ");
         scanf("%f", &nota);
 
@@ -28,15 +29,18 @@ void exSalarios()
     quantidadeMenor2k = 0;
     quantidadeMaior5k = 0;
 
-    while(i <= 3) {
+    while (i <= 3)
+    {
         printf("Digite o salario: ");
         scanf("%f", &salario);
 
-        if(salario <= 2000) {
+        if (salario <= 2000)
+        {
             quantidadeMenor2k++;
         }
 
-        if (salario > 5000) {
+        if (salario > 5000)
+        {
             quantidadeMaior5k++;
         }
 
@@ -59,14 +63,17 @@ void exMaiorEMenorNumero()
     maiorNumero = 0;
     menorNumero = 0;
 
-    while(i <= 5) {
+    while (i <= 5)
+    {
         printf("Digite o numero: ");
         scanf("%d", &numero);
 
-        if(numero > maiorNumero) {
+        if (numero > maiorNumero)
+        {
             maiorNumero = numero;
         }
-        if(menorNumero == 0 || numero < menorNumero) {
+        if (menorNumero == 0 || numero < menorNumero)
+        {
             menorNumero = numero;
         }
 
@@ -80,7 +87,8 @@ int main()
 {
     int op;
 
-    while(op < 1 || op > 3) {
+    while (op < 1 || op > 3)
+    {
         printf("Exercicios:\n");
         printf("1 - Media da sala\n");
         printf("2 - Salarios\n");
@@ -89,13 +97,16 @@ int main()
         scanf("%d", &op);
     }
 
-    if(op == 1) {
+    if (op == 1)
+    {
         exMediaGeral();
     }
-    if(op == 2) {
+    if (op == 2)
+    {
         exSalarios();
     }
-    if(op == 3) {
+    if (op == 3)
+    {
         exMaiorEMenorNumero();
     }
 
