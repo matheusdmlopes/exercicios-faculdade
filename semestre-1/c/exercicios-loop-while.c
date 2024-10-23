@@ -3,15 +3,15 @@
 void exMediaGeral()
 {
     int i;
-    float acc, nota, mediaGeral;
+    float acc, media, mediaGeral;
     i = 1;
     acc = 0;
     while (i <= 3)
     {
         printf("Digite a nota do aluno: ");
-        scanf("%f", &nota);
+        scanf("%f", &media);
 
-        acc = acc + nota;
+        acc = acc + media;
         i++;
     }
     mediaGeral = acc / 3;
