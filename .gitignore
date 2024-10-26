@@ -11,8 +11,6 @@
 # Ignorar diretórios de compilação
 /build/
 
-/semestre-1/c/gravacoes/
-
 !*/
 !*.c
 !*.h
