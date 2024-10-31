@@ -39,5 +39,5 @@ void teste2() {
 }
 
 int main() {
-    teste2();
+    teste1();
 }
