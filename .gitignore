@@ -1,17 +1,24 @@
-# Ignorar arquivos de objeto
+# Ignorar tudo por padrão
 *
-*.o
 
-# Ignorar executáveis
+# Permitir arquivos de código fonte C e C#
+!*.c
+!*.h
+!*.cs
+!*.sln
+!*.csproj
+!*.json
+!*.md
+
+# Ignorar executáveis e binários de C e C#
+*.o
 *.exe
 *.out
 *.a
 *.so
+*.dll
 
-# Ignorar diretórios de compilação
+# Ignorar diretórios de build do C e C#
+/bin/
+/obj/
 /build/
-
-!*/
-!*.c
-!*.h
-!*.md
