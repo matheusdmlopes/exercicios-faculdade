@@ -1,24 +1,19 @@
 # Ignorar tudo por padrão
 *
 
-# Permitir arquivos de código fonte C e C#
-!*.c
-!*.h
+# Permitir TODOS os diretórios para que as exceções abaixo funcionem
+!*/
+
+# Permitir arquivos essenciais do projeto
 !*.cs
 !*.sln
 !*.csproj
 !*.json
 !*.md
+!*.gitignore
 
-# Ignorar executáveis e binários de C e C#
-*.o
-*.exe
-*.out
-*.a
-*.so
-*.dll
-
-# Ignorar diretórios de build do C e C#
-/bin/
-/obj/
-/build/
+# Bloquear binários e builds do .NET
+bin/
+obj/
+**/bin/
+**/obj/
